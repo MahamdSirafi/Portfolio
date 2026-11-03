@@ -61,6 +61,7 @@
           "name": "Mohammed Adel Seirafi",
           "alternateName": "Mohammed Adel Sierafi",
           "jobTitle": "MERN Stack & Web Developer",
+          "birthDate": "2001-06-29",
           "description": "Back-End oriented Full Stack Developer specializing in Node.js, NestJS, and scalable web applications.",
           "url": "https://mahamdsirafi.github.io/Portfolio/",
           "image": "https://mahamdsirafi.github.io/Portfolio/assets/img/mohammed-adel-seirafi.png",
@@ -263,7 +264,7 @@
                 <ul class="theme-list">
                   <li class="fg-dark"><b>From:</b> Aleppo, Syria</li>
                   <li class="fg-dark"><b>Lives In:</b> Aleppo, Syria</li>
-                  <li class="fg-dark"><b>Age:</b> 22</li>
+                  <li class="fg-dark"><b>Age:</b> <span id="age-value">25</span></li>
                   <li class="fg-dark"><b>Gender:</b> Male</li>
                 </ul>
                 <a href="./assets/img/mohammed-adel-seirafi-cv.pdf"
@@ -792,5 +793,20 @@
     <script src="./assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="./assets/js/google-maps.js"></script>
     <script src="./assets/js/minibar-virtual.js"></script>
+
+    <!-- Dynamic age calculation (birthdate: 2001-06-29) -->
+    <script>
+      (function () {
+        var birth = new Date(2001, 5, 29); // month is 0-indexed → 5 = June
+        var now = new Date();
+        var age = now.getFullYear() - birth.getFullYear();
+        var m = now.getMonth() - birth.getMonth();
+        if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) {
+          age--;
+        }
+        var el = document.getElementById('age-value');
+        if (el) el.textContent = age;
+      })();
+    </script>
   </body>
 </html>
