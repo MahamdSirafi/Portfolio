@@ -406,3 +406,54 @@ select:focus-visible {
     margin: 0 auto;
   }
 }
+
+/* Arabic / RTL */
+html[lang="ar"] body {
+  font-family: "Cairo", Tahoma, "Segoe UI", sans-serif;
+}
+html[dir="rtl"] .navbar-nav.ml-auto,
+html[dir="rtl"] .nav.ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+html[dir="rtl"] .navbar-brand {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+html[dir="rtl"] .offset-lg-1 {
+  margin-left: 0;
+  margin-right: 8.333333%;
+}
+html[dir="rtl"] .pr-md-5 {
+  padding-right: 0 !important;
+  padding-left: 3rem !important;
+}
+html[dir="rtl"] .timeline li {
+  padding-left: 0;
+  padding-right: 30px;
+}
+html[dir="rtl"] .timeline li::before {
+  left: auto;
+  right: -8px;
+}
+html[dir="rtl"] .timeline li .title {
+  border-radius: 0 30px 30px 60px;
+}
+html[dir="rtl"] .page-about .img-place::before {
+  right: auto;
+  left: -35px;
+}
+html[dir="rtl"] .theme-list,
+html[dir="rtl"] .list-unstyled {
+  padding-right: 0;
+}
+html[dir="rtl"] .vg-footer .list-unstyled a:hover {
+  transform: translateX(-3px);
+}
+html[dir="rtl"] .tech-tags {
+  padding-right: 0;
+}
+html[dir="rtl"] .ti-arrow-up,
+html[dir="rtl"] .ti-mouse {
+  direction: ltr;
+}
