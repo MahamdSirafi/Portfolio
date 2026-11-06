@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="copyright" content="MACode ID, https://www.macodeid.com/" />
 
     <!-- Google Search Console Verification -->
@@ -13,13 +12,17 @@
     />
 
     <!-- SEO الأساسي -->
-    <title>Mohammed Adel Seirafi | MERN Stack & Web Developer</title>
+    <title>Mohammed Adel Seirafi – MERN Stack & Node.js Developer</title>
     <meta
       name="description"
-      content="Portfolio of Mohammed Adel Seirafi, a MERN Stack and Back-End oriented Full Stack Developer specializing in Node.js, NestJS, and scalable web applications. Based in Aleppo, Syria."
+      content="Mohammed Adel Seirafi is a back-end oriented MERN Stack developer in Aleppo, Syria, building scalable Node.js and NestJS web apps and APIs."
     />
     <meta name="author" content="Mohammed Adel Seirafi" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1"
+    />
+    <meta name="theme-color" content="#e63946" />
     <link rel="canonical" href="https://mahamdsirafi.github.io/Portfolio/" />
 
     <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
@@ -28,11 +31,11 @@
     <meta property="og:site_name" content="Mohammed Adel Seirafi" />
     <meta
       property="og:title"
-      content="Mohammed Adel Seirafi | MERN Stack & Web Developer"
+      content="Mohammed Adel Seirafi – MERN Stack & Node.js Developer"
     />
     <meta
       property="og:description"
-      content="Portfolio of a Back-End oriented Full Stack Developer specializing in Node.js, NestJS, and scalable APIs."
+      content="Mohammed Adel Seirafi is a back-end oriented MERN Stack developer in Aleppo, Syria, building scalable Node.js and NestJS web apps and APIs."
     />
     <meta
       property="og:url"
@@ -44,63 +47,101 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Mohammed Adel Seirafi – MERN Stack & Web Developer"
+    />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Mohammed Adel Seirafi | MERN Stack & Web Developer"
+      content="Mohammed Adel Seirafi – MERN Stack & Node.js Developer"
     />
     <meta
       name="twitter:description"
-      content="Portfolio of a Back-End oriented Full Stack Developer specializing in Node.js, NestJS, and scalable APIs."
+      content="Mohammed Adel Seirafi is a back-end oriented MERN Stack developer in Aleppo, Syria, building scalable Node.js and NestJS web apps and APIs."
     />
     <meta
       name="twitter:image"
       content="https://mahamdsirafi.github.io/Portfolio/assets/img/social-preview.webp"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Mohammed Adel Seirafi – MERN Stack & Web Developer"
     />
 
     <!-- Data Terstruktur (Schema.org) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "Mohammed Adel Seirafi",
-          "alternateName": "Mohammed Adel Sierafi",
-          "jobTitle": "MERN Stack & Web Developer",
-          "birthDate": "2001-06-29",
-          "description": "Back-End oriented Full Stack Developer specializing in Node.js, NestJS, and scalable web applications.",
-          "url": "https://mahamdsirafi.github.io/Portfolio/",
-          "image": "https://mahamdsirafi.github.io/Portfolio/assets/img/mohammed-adel-seirafi.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Aleppo",
-            "addressCountry": "SY"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mahamdsirafi.github.io/Portfolio/#website",
+            "url": "https://mahamdsirafi.github.io/Portfolio/",
+            "name": "Mohammed Adel Seirafi",
+            "inLanguage": "en"
           },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Aleppo University"
+          {
+            "@type": "ProfilePage",
+            "@id": "https://mahamdsirafi.github.io/Portfolio/#profile",
+            "url": "https://mahamdsirafi.github.io/Portfolio/",
+            "name": "Mohammed Adel Seirafi – MERN Stack & Node.js Developer",
+            "isPartOf": {
+              "@id": "https://mahamdsirafi.github.io/Portfolio/#website"
+            },
+            "mainEntity": {
+              "@id": "https://mahamdsirafi.github.io/Portfolio/#person"
+            }
           },
-          "knowsAbout": [
-            "Node.js",
-            "NestJS",
-            "Express",
-            "React",
-            "Next.js",
-            "MongoDB",
-            "PostgreSQL",
-            "Docker",
-            "REST APIs",
-            "GraphQL",
-            "SEO"
-          ],
-          "sameAs": [
-            "https://Instagram.com/mohamad_adel_sirafi",
-            "https://www.Facebook.com/mohamadadel.seurafe"
-          ]
-        }
+          {
+            "@type": "Person",
+            "@id": "https://mahamdsirafi.github.io/Portfolio/#person",
+            "name": "Mohammed Adel Seirafi",
+            "alternateName": "Mohammed Adel Sierafi",
+            "jobTitle": "MERN Stack & Web Developer",
+            "description": "Mohammed Adel Seirafi is a back-end oriented MERN Stack developer in Aleppo, Syria, building scalable Node.js and NestJS web apps and APIs.",
+            "url": "https://mahamdsirafi.github.io/Portfolio/",
+            "image": "https://mahamdsirafi.github.io/Portfolio/assets/img/mohammed-adel-seirafi.webp",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "MISRAJ TECHNOLOGY"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Aleppo",
+              "addressCountry": "SY"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Aleppo University"
+            },
+            "knowsAbout": [
+              "Node.js",
+              "NestJS",
+              "Express",
+              "React",
+              "Next.js",
+              "MongoDB",
+              "PostgreSQL",
+              "Docker",
+              "REST APIs",
+              "GraphQL",
+              "SEO",
+              "Claude Code",
+              "Cursor",
+              "Model Context Protocol (MCP)",
+              "AWS",
+              "Git",
+              "API Integration"
+            ],
+            "sameAs": [
+              "https://instagram.com/mohamad_adel_sirafi",
+              "https://www.facebook.com/mohamadadel.seurafe"
+            ]
+          }
+        ]
       }
     </script>
 
@@ -111,7 +152,7 @@
       fetchpriority="high"
     />
 
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" href="./assets/favicon.ico" sizes="any" />
 
     <link
       rel="stylesheet"
@@ -121,14 +162,24 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
     <link
       rel="stylesheet"
-      type="text/css"
       href="./assets/vendor/animate/animate.css"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript
+      ><link rel="stylesheet" href="./assets/vendor/animate/animate.css"
+    /></noscript>
     <link
       rel="stylesheet"
-      type="text/css"
       href="./assets/vendor/owl-carousel/owl.carousel.css"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="./assets/vendor/owl-carousel/owl.carousel.css"
+    /></noscript>
     <link
       rel="stylesheet"
       type="text/css"
@@ -136,22 +187,43 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
       href="./assets/vendor/nice-select/css/nice-select.css"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="./assets/vendor/nice-select/css/nice-select.css"
+    /></noscript>
     <link
       rel="stylesheet"
-      type="text/css"
       href="./assets/vendor/fancybox/css/jquery.fancybox.min.css"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="./assets/vendor/fancybox/css/jquery.fancybox.min.css"
+    /></noscript>
     <link rel="stylesheet" type="text/css" href="./assets/css/virtual.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="./assets/css/minibar.virtual.css"
     />
+    <link rel="stylesheet" href="./assets/css/enhance.css" />
+    <noscript
+      ><style>
+        .wow {
+          visibility: visible !important;
+        }
+      </style></noscript
+    >
   </head>
   <body class="theme-red">
+    <a class="skip-link" href="#about">Skip to content</a>
     <!-- Back to top button -->
     <div class="btn-back_to_top">
       <span class="ti-arrow-up"></span>
@@ -161,7 +233,12 @@
     <div class="config">
       <div class="template-config">
         <div class="d-block">
-          <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
+          <button
+            class="btn btn-fab btn-sm"
+            id="sideel"
+            title="Settings"
+            aria-label="Open settings"
+          >
             <span class="ti-settings"></span>
           </button>
         </div>
@@ -169,7 +246,8 @@
           <a
             href="./assets/img/mohammed-adel-seirafi-cv.pdf"
             class="btn btn-fab btn-sm"
-            title="Get CV"
+            title="Download CV"
+            aria-label="Download CV"
             data-toggle="tooltip"
             data-placement="left"
             ><span class="ti-download"></span
@@ -179,7 +257,8 @@
           <a
             href="#contact"
             class="btn btn-fab btn-sm"
-            title="Help"
+            title="Contact"
+            aria-label="Contact me"
             data-toggle="tooltip"
             data-placement="left"
             ><span class="ti-help"></span
@@ -219,7 +298,7 @@
       <div class="brand">
         <img src="./assets/favicon.ico" alt="" width="30" height="30" />
       </div>
-      <h3 class="ml-1">Gram</h3>
+      <span class="h3 ml-1 mb-0">MAS</span>
       <button class="btn-fab toggle-menu mr-3">
         <span class="ti-menu"></span>
       </button>
@@ -257,12 +336,6 @@
             </a>
           </li>
           <li class="menu-item">
-            <a href="#blog" class="menu-link">
-              <span class="icon ti-book"></span>
-              <span class="caption">Blog</span>
-            </a>
-          </li>
-          <li class="menu-item">
             <a href="#contact" class="menu-link">
               <span class="icon ti-location-pin"></span>
               <span class="caption">Contact</span>
@@ -272,18 +345,8 @@
       </div>
     </div>
 
-    <div class="vg-main-wrapper">
-      <div
-        class="vg-page page-home"
-        id="home"
-        style="
-          background-image: url(./assets/img/hero-background.webp);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-          background-attachment: fixed;
-        "
-      >
+    <div class="vg-main-wrapper" role="main">
+      <div class="vg-page page-home" id="home">
         <div class="caption wow zoomInUp">
           <p class="h1 fw-normal">Welcome</p>
           <h1 class="h2 fw-medium fg-theme">I'm Mohammed Adel Seirafi</h1>
@@ -332,130 +395,55 @@
           <h2 class="h1 text-center fg-dark wow fadeInUp">My Skills</h2>
           <div class="row py-3">
             <div class="col-md-6">
-              <h3 class="h4 wow fadeInUp">Coding Skills</h3>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">JavaScript &amp; TypeScript</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 100%"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    100%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">Node.js</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 95%"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    95%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">HTML + CSS</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 86%"
-                    aria-valuenow="86"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    86%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">SQL &amp; NoSQL</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 94%"
-                    aria-valuenow="94"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    94%
-                  </div>
-                </div>
-              </div>
+              <h3 class="h4 wow fadeInUp">Languages &amp; Databases</h3>
+              <ul class="tech-tags wow fadeInUp">
+                <li class="tech-tag">JavaScript &amp; TypeScript</li>
+                <li class="tech-tag">Node.js</li>
+                <li class="tech-tag">HTML + CSS</li>
+                <li class="tech-tag">SQL &amp; NoSQL</li>
+                <li class="tech-tag">PostgreSQL</li>
+                <li class="tech-tag">MongoDB</li>
+              </ul>
             </div>
             <div class="col-md-6">
-              <h3 class="h4 wow fadeInUp">Framework Skills</h3>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">Express</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 92%"
-                    aria-valuenow="92"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    92%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">NestJS</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 90%"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    90%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">React.js</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 69%"
-                    aria-valuenow="69"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    69%
-                  </div>
-                </div>
-              </div>
-              <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">Next.js</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 70%"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    70%
-                  </div>
-                </div>
-              </div>
+              <h3 class="h4 wow fadeInUp">Frameworks &amp; Libraries</h3>
+              <ul class="tech-tags wow fadeInUp">
+                <li class="tech-tag">Express</li>
+                <li class="tech-tag">NestJS</li>
+                <li class="tech-tag">React.js</li>
+                <li class="tech-tag">Next.js</li>
+                <li class="tech-tag">GraphQL</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h4 wow fadeInUp">DevOps &amp; Cloud</h3>
+              <ul class="tech-tags wow fadeInUp">
+                <li class="tech-tag">Docker</li>
+                <li class="tech-tag">AWS</li>
+                <li class="tech-tag">Git</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h4 wow fadeInUp">AI-Assisted Development</h3>
+              <ul class="tech-tags wow fadeInUp">
+                <li class="tech-tag">Claude Code</li>
+                <li class="tech-tag">Cursor</li>
+                <li class="tech-tag">MCP Server Development</li>
+                <li class="tech-tag">AI Agents</li>
+                <li class="tech-tag">Prompt Engineering</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h4 wow fadeInUp">
+                Integrations &amp; Third-Party APIs
+              </h3>
+              <ul class="tech-tags wow fadeInUp">
+                <li class="tech-tag">REST &amp; Webhook Integrations</li>
+                <li class="tech-tag">Payment Gateways</li>
+                <li class="tech-tag">CRM &amp; ERP APIs</li>
+                <li class="tech-tag">Messaging &amp; Notification APIs</li>
+                <li class="tech-tag">Maps &amp; Location APIs</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -554,12 +542,18 @@
                 <h3 style="padding-top: 10px" class="h4 fg-theme">
                   E-commerce Store
                 </h3>
+                <p class="service-desc">
+                  Custom online stores with secure checkout and admin tools.
+                </p>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp">
               <div class="card card-body">
                 <div class="iconic"><span class="ti-announcement"></span></div>
                 <h3 style="padding-top: 10px" class="h4 fg-theme">SEO</h3>
+                <p class="service-desc">
+                  Technical SEO, structured data and Core Web Vitals tuning.
+                </p>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp">
@@ -568,6 +562,9 @@
                 <h3 style="padding-top: 10px" class="h4 fg-theme">
                   Web Development
                 </h3>
+                <p class="service-desc">
+                  Fast, responsive front-ends with React and Next.js.
+                </p>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp">
@@ -576,6 +573,9 @@
                 <h3 style="padding-top: 10px" class="h4 fg-theme">
                   API Development
                 </h3>
+                <p class="service-desc">
+                  Scalable REST &amp; GraphQL APIs with Node.js and NestJS.
+                </p>
               </div>
             </div>
           </div>
@@ -602,9 +602,6 @@
             </button>
             <button class="btn btn-theme-outline" data-filter=".template">
               Template
-            </button>
-            <button class="btn btn-theme-outline" data-filter=".api">
-              API
             </button>
           </div>
 
@@ -725,94 +722,9 @@
             </div>
           </div>
           <!-- End gridder -->
-          <div class="text-center wow fadeInUp">
-            <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
-          </div>
         </div>
       </div>
       <!-- End Portfolio page -->
-
-      <!-- Page Blog -->
-      <div class="vg-page page-blog" id="blog">
-        <h2 class="h1 text-center fg-dark wow fadeInUp">Latest Post</h2>
-        <div class="container">
-          <div class="row post-grid">
-            <div class="col-md-6 col-lg-4 wow fadeInUp">
-              <div class="card">
-                <div class="img-place">
-                  <img
-                    src="./assets/img/work/blog-invision-design.jpg"
-                    alt="Invision design forward fund article cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div class="caption">
-                  <a href="javascript:void(0)" class="post-category"
-                    >Technology</a
-                  >
-                  <a href="#blog" class="post-title"
-                    >Invision design forward fund</a
-                  >
-                  <span class="post-date"
-                    ><span class="sr-only">Published on</span> May 22,
-                    2022</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp">
-              <div class="card">
-                <div class="img-place">
-                  <img
-                    src="./assets/img/work/game-streaming.jpg"
-                    alt="Announcing a plan for small teams article cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div class="caption">
-                  <a href="javascript:void(0)" class="post-category"
-                    >Business</a
-                  >
-                  <a href="#blog" class="post-title"
-                    >Announcing a plan for small teams</a
-                  >
-                  <span class="post-date"
-                    ><span class="sr-only">Published on</span> May 22,
-                    2021</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp">
-              <div class="card">
-                <div class="img-place">
-                  <img
-                    src="./assets/img/work/mobile-travel-app.jpg"
-                    alt="5 basic tips for illustrating article cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div class="caption">
-                  <a href="javascript:void(0)" class="post-category">Design</a>
-                  <a href="#blog" class="post-title"
-                    >5 basic tips for illustrating</a
-                  >
-                  <span class="post-date"
-                    ><span class="sr-only">Published on</span> May 1, 2022</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 text-center py-3 wow fadeInUp">
-              <a href="#blog" class="btn btn-theme">See All Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End page blog -->
 
       <!-- Page Contact -->
       <div class="vg-page page-contact" id="contact">
@@ -834,14 +746,17 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <form class="vg-contact-form">
+              <form class="vg-contact-form" aria-label="Contact form">
                 <div class="form-row">
                   <div class="col-12 wow fadeInUp">
                     <input
                       class="form-control"
                       type="text"
                       name="Name"
-                      placeholder="Your Name"
+                      placeholder="Your name"
+                      aria-label="Your name"
+                      autocomplete="name"
+                      required
                     />
                   </div>
                   <div class="col-6 wow fadeInUp">
@@ -849,7 +764,10 @@
                       class="form-control"
                       type="email"
                       name="Email"
-                      placeholder="Email Address"
+                      placeholder="Email address"
+                      aria-label="Email address"
+                      autocomplete="email"
+                      required
                     />
                   </div>
                   <div class="col-6 wow fadeInUp">
@@ -858,6 +776,9 @@
                       type="text"
                       name="Subject"
                       placeholder="Subject"
+                      aria-label="Subject"
+                      autocomplete="off"
+                      required
                     />
                   </div>
                   <div class="col-12 wow fadeInUp">
@@ -865,7 +786,9 @@
                       class="form-control"
                       name="Message"
                       rows="6"
-                      placeholder="Enter message here.."
+                      placeholder="Enter your message…"
+                      aria-label="Message"
+                      required
                     ></textarea>
                   </div>
                   <button
@@ -883,7 +806,7 @@
       <!-- End page contact -->
 
       <!-- Footer -->
-      <div class="vg-footer">
+      <div class="vg-footer" role="contentinfo">
         <h2 class="h1 text-center">MAS</h2>
         <div class="container">
           <div class="row">
@@ -901,7 +824,7 @@
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      href="https://Instagram.com/mohamad_adel_sirafi"
+                      href="https://instagram.com/mohamad_adel_sirafi"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Instagram</a
@@ -909,14 +832,12 @@
                   </li>
                   <li>
                     <a
-                      href="https://www.Facebook.com/mohamadadel.seurafe"
+                      href="https://www.facebook.com/mohamadadel.seurafe"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Facebook</a
                     >
                   </li>
-                  <li><a href="#" rel="noopener">Twitter</a></li>
-                  <li><a href="#" rel="noopener">Youtube</a></li>
                 </ul>
               </div>
             </div>
@@ -934,29 +855,10 @@
             </div>
           </div>
           <div class="row justify-content-center mt-3">
-            <div class="col-12 mb-3">
-              <h3 class="fw-normal text-center">Subscribe</h3>
-            </div>
-            <div class="col-lg-6">
-              <form class="mb-3">
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email address"
-                  />
-                  <input
-                    type="submit"
-                    class="btn btn-theme no-shadow"
-                    value="Subscribe"
-                  />
-                </div>
-              </form>
-            </div>
             <div class="col-12">
               <p class="text-center mb-0 mt-4">
-                Copyright &copy;2024. All rights reserved.
-                <span class="ti-heart fg-theme-red"></span> by
+                Copyright &copy; <span id="year">2026</span>. All rights
+                reserved. <span class="ti-heart fg-theme-red"></span> by
                 <a href="./">MAS</a>
               </p>
             </div>
@@ -967,18 +869,36 @@
     </div>
     <!-- End main wrapper -->
 
-    <script src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    <script src="./assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    <script src="./assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="./assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
-    <script src="./assets/vendor/wow/wow.min.js"></script>
-    <script src="./assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
-    <script src="./assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="./assets/js/google-maps.js"></script>
-    <script src="./assets/js/minibar-virtual.js"></script>
+    <script src="./assets/js/jquery-3.5.1.min.js" defer></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="./assets/vendor/owl-carousel/owl.carousel.min.js"
+      defer
+    ></script>
+    <script
+      src="./assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"
+      defer
+    ></script>
+    <script src="./assets/vendor/isotope/isotope.pkgd.min.js" defer></script>
+    <script
+      src="./assets/vendor/nice-select/js/jquery.nice-select.min.js"
+      defer
+    ></script>
+    <script
+      src="./assets/vendor/fancybox/js/jquery.fancybox.min.js"
+      defer
+    ></script>
+    <script src="./assets/vendor/wow/wow.min.js" defer></script>
+    <script
+      src="./assets/vendor/animateNumber/jquery.animateNumber.min.js"
+      defer
+    ></script>
+    <script
+      src="./assets/vendor/waypoints/jquery.waypoints.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/google-maps.js" defer></script>
+    <script src="./assets/js/minibar-virtual.js" defer></script>
 
     <!-- Dynamic age calculation (birthdate: 2001-06-29) -->
     <script>
@@ -992,7 +912,28 @@
         }
         var el = document.getElementById("age-value");
         if (el) el.textContent = age;
+        var y = document.getElementById("year");
+        if (y) y.textContent = now.getFullYear();
       })();
+    </script>
+    <script>
+      document.querySelectorAll(".vg-contact-form").forEach(function (f) {
+        f.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var d = new FormData(f);
+          var s = encodeURIComponent(d.get("Subject") || "Portfolio contact");
+          var b = encodeURIComponent(
+            (d.get("Message") || "") +
+              "\n\n— " +
+              (d.get("Name") || "") +
+              " (" +
+              (d.get("Email") || "") +
+              ")",
+          );
+          location.href =
+            "mailto:maszzzzy@gmail.com?subject=" + s + "&body=" + b;
+        });
+      });
     </script>
   </body>
 </html>

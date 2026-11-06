@@ -1,0 +1,231 @@
+/* enhance.css – design, accessibility and performance layer (loads after virtual.css) */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.vg-page,
+[id] {
+  scroll-margin-top: 72px;
+}
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+p {
+  max-width: 68ch;
+}
+.text-center p,
+.caption p,
+.card p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero: image + dark gradient for text contrast (replaces inline style) */
+.page-home {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(10, 12, 20, 0.45) 0%,
+      rgba(10, 12, 20, 0.65) 100%
+    ),
+    url(../img/hero-background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 991px), (hover: none) {
+  .page-home {
+    background-attachment: scroll;
+  } /* fixed backgrounds jank on mobile */
+}
+.hero-cta {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-hero-ghost {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  border-radius: 50rem;
+  padding: 0.5rem 1.5rem;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.btn-hero-ghost:hover {
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+}
+a.floating-button {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Skills */
+.progress {
+  height: 0.9rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.08);
+}
+.progress-bar {
+  border-radius: 999px;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+.progress-wrapper {
+  margin-bottom: 1.1rem;
+}
+
+/* Cards: consistent radius, soft shadow, hover lift */
+.card {
+  border-radius: 14px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+.service-desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+.card-service {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/* Portfolio images */
+.grid-item .img-place {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.grid-item .img-place img {
+  transition: transform 0.4s ease;
+}
+.grid-item .img-place:hover img {
+  transform: scale(1.05);
+}
+
+/* Experience timeline spacing */
+.page-experience h2 {
+  margin-bottom: 0.25rem;
+}
+.page-experience .timeline p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Forms */
+.vg-contact-form .form-control {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.vg-contact-form .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.2);
+}
+.vg-contact-form .btn {
+  border-radius: 50rem;
+  padding: 0.6rem 1.75rem;
+}
+.vg-maps {
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+/* Footer */
+.vg-footer a {
+  transition: opacity 0.2s;
+}
+.vg-footer a:hover {
+  opacity: 0.75;
+}
+
+/* Accessibility */
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -4rem;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 1rem;
+  color: #fff;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e63946;
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion; never leave .wow content hidden */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .wow {
+    visibility: visible !important;
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Tech tags (replace skill progress bars) */
+.tech-tags {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.tech-tag {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+.tech-tag:hover {
+  transform: translateY(-2px);
+  border-color: #e63946;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
